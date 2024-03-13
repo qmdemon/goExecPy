@@ -191,7 +191,7 @@ func (c *Context) extract_result(output string) (interface{}, error) {
 		if res[0].(string) == "ok" {
 			return "", nil
 		} else {
-			return "", RuntimeUnavailableError{Message: fmt.Sprintf("%v", res[1])}
+			return "", RuntimeUnavailableError{Message: fmt.Sprintf("%v", res[1:])}
 		}
 	} else {
 		return res[1], nil
