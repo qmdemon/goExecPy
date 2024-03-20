@@ -249,17 +249,17 @@ func CheckCommandExists(cmd string) bool {
 //}
 
 func python() *ExternalRuntime {
-	r := python_python_3()
+	r := python_python()
 	if r.Is_available() {
 		return r
 	}
-	return python_python()
-}
-
-func python_python_3() *ExternalRuntime {
-	return BuildExternalRuntime("python", []string{"python"}, Python_source)
+	return python_python_3()
 }
 
 func python_python() *ExternalRuntime {
+	return BuildExternalRuntime("python", []string{"python"}, Python_source)
+}
+
+func python_python_3() *ExternalRuntime {
 	return BuildExternalRuntime("python3", []string{"python3"}, Python_source)
 }
