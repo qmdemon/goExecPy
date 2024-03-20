@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # A Golang runtime Python plugin library
 
 ## Introduction
@@ -46,3 +47,6 @@ Please note that the returned value is of type `interface{}`, so you may need to
  ```
 ## Thanks to
 * [execjs](https://github.com/cokeBeer/execjs) for providing the basic implementation of executing JavaScript code within a Golang runtime.
+=======
+A Golang runtime Python plugin library
+>>>>>>> origin/master
